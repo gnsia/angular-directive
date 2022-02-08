@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgSwitchExampleComponent } from './ng-switch-example/ng-switch-example.component';
+import { NgStyleExampleComponent } from './ng-style-example/ng-style-example.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NgSwitchExampleComponent,
+    NgStyleExampleComponent
   ],
   imports: [
     BrowserModule,

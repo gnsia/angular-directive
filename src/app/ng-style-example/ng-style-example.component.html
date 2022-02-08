@@ -1,0 +1,23 @@
+<div [style.background-color]="'yellow'">
+    Uses fixed yellow background
+</div>
+<div [ngStyle]="{color: 'white', 'background-color': 'blue'}">
+    Uses fixed white text on blue background
+</div>
+
+<div>
+    <span [ngStyle]="{color: color}" [style.font-size.px]="fontSize">
+        {{ color }}, {{ fontSize }}px text
+    </span>
+</div>
+
+
+<div class="ui input">
+    <input type="text" name="color" value="{{color}}" #colorinput>
+</div>
+<div class="ui input">
+    <input type="text" name="fontSize" value="{{fontSize}}" #fontinput>
+</div>
+<button class="ui primary button" (click)="apply(colorinput.value, fontinput.value)">
+    Apply Setting
+</button>

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-directive';
+  a: number = 10;
+  b: number = 5;
+  str: string = 'yes';
+  myVar: string = 'D';
+
+  myfunction(): boolean {
+    return true;
+  }
 }
