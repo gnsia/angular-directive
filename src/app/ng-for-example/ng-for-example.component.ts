@@ -13,6 +13,24 @@ export class NgForExampleComponent implements OnInit {
     { name: 'heejin', age: 33, city: 'Seoul' },
     { name: 'gildong', age: 27, city: 'Hanyang' }
   ]
+
+  peopleByCity = [
+    {
+      city: 'Miami',
+      people: [
+        { name: 'John', age: 12 },
+        { name: 'Angel', age: 22 }
+      ]
+    },
+    {
+      city: 'Sao Paulo',
+      people: [
+        { name: 'Anderson', age: 35 },
+        { name: 'Felipe', age:36 }
+      ]
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
